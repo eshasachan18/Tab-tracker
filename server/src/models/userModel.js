@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
+
+console.log('inside model');
+
 const userSchema = new mongoose.Schema(
     {
       name: {
@@ -25,5 +28,5 @@ const userSchema = new mongoose.Schema(
     { collection: 'users' }
   );
   
-  const User= mongoose.model('user',userSchema);
+  var User= mongoose.model('Users',userSchema);
   module.exports = User;

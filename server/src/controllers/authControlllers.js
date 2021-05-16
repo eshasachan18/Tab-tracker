@@ -1,16 +1,17 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
-const User = import('./../models/userModel');
+const User = require('./../models/userModel')
 const catchAsync= require('./../utils/catchAsync')
 
 exports.signup = async(req,res,next) => {
     try{
+        console.log('inside controller');
         const newUser = await User.create(req.body);
         res.status(201).json({
             status: 'success',
             data : {
-                user: newUser
+                User: newUser
             }
         });
     }catch(err) {

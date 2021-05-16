@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 
 const routes =require('./routes/userRoutes') 
-const usermodel=require('./models/UserModel')
+const usermodel=require('./models/userModel')
 
 
 

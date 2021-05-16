@@ -1,7 +1,7 @@
 const express = require('express')
 const authController = require('./../controllers/authControlllers');
 const router = express.Router()
-
+console.log('inside route');
 module.exports = router =>{
 router.post('/signup',authController.signup);
 
