@@ -9,6 +9,20 @@ const userSchema = new mongoose.Schema(
         type: String,
         required: [true,'tell your name']
       },
+      Business_model: {
+        type: String,
+        enum: ['Farm Producer', 'Transporter', 'Product Producer', 'Product Supplier','Wholesaler','Product distributer','Retailer','Consumer'],
+        required : true 
+    },
+      Organisation: {
+        type: String,
+        required: [true,'tell your organisation']
+      },
+      Phone_number:{
+        type:String,
+        required: [true,'tell your phone number']
+      },
+
       email: {
         type: String,
         required: [true,'Write your email'],
@@ -32,7 +46,7 @@ const userSchema = new mongoose.Schema(
        
       }
     },
-    { collection: 'users' }
+    { collection: 'users3' }
   );
 
   userSchema.pre('save',async function(next){

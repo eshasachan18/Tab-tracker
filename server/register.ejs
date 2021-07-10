@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Organic Ledger</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="common/css/style.css" />
+		<link rel="stylesheet" href="common/css/responsive.css" />
+	</head>
+	<body>
+		
+		<div class="login-section">
+			<div class="d-flex flex-wrap">
+				<div class="col-md-6 bg-blue">
+					<a href="index.html" class="site-logo"><img src="common/images/logo.png" alt="" width="308" height="70"></a>
+					<img src="common/images/vector02.svg" alt="" class="m-auto welcome-img">
+					<div class="welcome-section">
+						<h1 class="text-center">Register Your Account</h1>
+						<p class="text-center text-white"> Organic Ledger is a single trusted source of truth. Give your customers the power of Blockchain and Internet of Things. Step into the future of transparency and traceability.</p>
+					</div>
+				</div>
+				<div class="col-md-6 right-col">
+					
+					<h2>Get’s Started.</h2>
+					<form action="/signup" method="post" name="login">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="fullname">Full Name</label>
+									<input type="text" name="name"  class="form-control" id="fullname"  placeholder="Enter Here" required>
+								</div>
+								<div class="form-group">
+									<label for="orgname">Organisation Name</label>
+									<input type="text" name="Organistaion"  class="form-control" id="orgname"  placeholder="Enter Here" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="myprofile_img_section text-center ">
+									<figure>
+										<img src="common/images/user-profile.png" alt="user-profile" width="175" height="175" class=" text-center d-inline">
+									</figure>
+									<div class="file-upload">
+										<input type="file">
+										<img src="common/images/edit-icon.svg" alt="edit" width="23" height="18">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="businessroleSelect">Business Role</label>
+							<select class="form-control" name="Business_model">
+								<option>-- Select Role --</option>
+								<option>Farm Producer</option>
+								<option>Transporter</option>
+								<option>Product Producer</option>
+								<option>Product Supplier</option>
+								<option>Wholesaler</option>
+								<option>Product distributer</option>
+								<option>Retailer</option>
+								<option>Consumer</option>
+							</select>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="email">Email address</label>
+								<input type="email" name="email"  class="form-control" id="email"  placeholder="Enter Here" required>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="phone">Phone Number</label>
+								<input type="number" name="Phone_number"  class="form-control" id="phone"  placeholder="Enter Here" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="exampleInputEmail1">Password</label>
+								<input type="password" name="password" id="password"  class="form-control"  placeholder="Enter Here" required>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="exampleInputEmail1">Confirm Password</label>
+								<input type="password" name="passwordConfirm" id="cpassword"  class="form-control"  placeholder="Enter Here" required>
+							</div>
+						</div>
+						<div class="form-group custom-checkobox">
+							<div class=" d-flex flex-wrap">
+								<div class="d-flex align-items-center"><input type="checkbox"  name="remember" checked="checked" id="remember">  <label for="remember">You agree to Organic Ledger
+								<a href="#" class="text-blue">Terms Of Service</a> and <a href="#" class="text-blue">Privacy Policy.</a></label></div>
+								
+							</div>
+						</div>
+						<div class="col-md-12">
+							<button type="submit" class=" btn btn-block custom-btn">Register</button>
+						</div>
+						
+						<div class="form-group">
+							<p class="create-account">Already have an account?
+								<a href="index.html" id="signup">Login</a></p>
+							</div>
+						</form>
+						
+				</div>
+			</div>
+		</div>
+			
+			<script type="text/javascript" src="common/js/3.2.1.min.js"></script>
+<script type="text/javascript" src="common/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+			<script type="text/javascript" src="common/js/custom.js"></script>
+		</body>
+	</html>

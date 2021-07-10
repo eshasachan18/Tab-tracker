@@ -13,6 +13,7 @@ exports.signup = async(req,res,next) => {
     try{
         console.log('inside controller');
         const newUser = await User.create(req.body);
+        console.log(await req.body.email);
         const token=jwt.sign({id:newUser._id},""+ process.env.JWT_SECRET,{
            // expiresIn:process.env.JWT_EXPIRES_IN
         })

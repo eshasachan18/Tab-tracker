@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
-
+const ejs = require('ejs');
 const routes = require('./routes/userRoutes')
 const usermodel = require('./models/userModel')
 
@@ -22,6 +22,7 @@ const app = express();
 app.use(morgan('combined '))
 app.use(bodyParser.json())
 app.use(cors())
+app.set('view engine', 'ejs');
 //app.use('/', routes);
 routes(app);
 console.log(mongoose.connection.readyState)
