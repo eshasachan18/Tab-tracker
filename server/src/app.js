@@ -22,6 +22,8 @@ const app = express();
 app.use(morgan('combined '))
 app.use(bodyParser.json())
 app.use(cors())
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 app.set('view engine', 'ejs');
 //app.use('/', routes);
 routes(app);

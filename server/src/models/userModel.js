@@ -11,12 +11,12 @@ const userSchema = new mongoose.Schema(
       },
       Business_model: {
         type: String,
-        enum: ['Farm Producer', 'Transporter', 'Product Producer', 'Product Supplier','Wholesaler','Product distributer','Retailer','Consumer'],
+        enum: ['Farm Producer', 'Transporter', 'Product Producer', 'Product Supplier','Wholesaler','Product distributor','Retailer','Consumer'],
         required : true 
     },
       Organisation: {
         type: String,
-        required: [true,'tell your organisation']
+       required: [true,'tell your organisation']
       },
       Phone_number:{
         type:String,

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iot Sensors Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="common/css/style.css" />
+    <link rel="stylesheet" href="common/css/responsive.css" />
+</head>
+
+<body>
+    <div class="dashboard-section " id="body-row">
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <div class="side-header">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex align-items-center menu-collapsed">
+                        <a href="index.html">
+                            <img src="common/images/logo.png" alt="" class="menu-title" width="250">
+                            <img src="common/images/website-small-logo.png" alt="" class="main-small-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-body">
+                    <ul class="list-group">
+                        <a href="register-product.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon01.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Register the Product</span>
+                            </div>
+                        </a>
+                        <a href="update-product-status.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon02.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Update Status</span>
+                            </div>
+                        </a>
+                        <a href="notification.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center ">
+                                <span><img src="common/images/icon03.png" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Notification</span>
+                            </div>
+                        </a>
+
+
+                        <a href="product-management.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon04.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Products Management</span>
+                            </div>
+                        </a>
+                        <a href="iot-sensors-management.html" class="list-group-item list-group-item-action flex-column align-items-start current-page-active">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon05.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">IoT Sensors Management</span>
+                            </div>
+                        </a>
+                        <a href="orders-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon06.svg" width="26" height="26" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Orders Management</span>
+                            </div>
+                        </a>
+                        <a href="blockchain-ledger-explorer.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon07.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Blockchain Ledger Explorer</span>
+                            </div>
+                        </a>
+                        <a href="tracking-journey.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon08.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Tracking Journey</span>
+                            </div>
+                        </a>
+                    </ul>
+            </div>
+            <div class="side-footer">
+                <ul class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span><img src="common/images/logout.svg" alt=""></span>
+                            <span class="menu-title">Logout</span>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="main main-expanded">
+            <nav class="">
+                <a href="#" class="sidebar-toggle" data-toggle="sidebar-colapse">
+                    <img src="common/images/menu.png" width="22" height="22" alt="">
+                </a>
+                <span class="main-heading">IoT Sensors Managment</span>
+                <div class="user-profile">
+                        <a href="profile.html"><img src="common/images/user-icon.png" alt=""></a>
+                        <a href="profile.html"><span class="user-name">Claude McKenna</span></a>
+                    </div>
+            </nav>
+            <main class="content">
+                <div class="login-section product-management iot-management">
+                    <div class="product-management-section1">
+                        <span class="main-heading">IoT Sensors</span>
+                        <a href="iot-form.html" class="ml-auto product-btn">+ Add Device</a>
+                    </div>
+                    <div class="product-management-section2">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <ul id="tabs" class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a id="tab-1" href="#pane-1" class="nav-link active" data-toggle="tab" role="tab">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="tab-2" href="#pane-2" class="nav-link" data-toggle="tab" role="tab">All IoT Sensors</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4 ml-auto">
+                                <div class="dataTables_filter">
+                                    <input type="search" class="form-control" placeholder="">
+                                    <input type="submit" value="" class="search-btn">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content" class="tab-content" role="tablist">
+                            <div id="pane-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-1">
+                                <div  class="table-scroll">
+                                    <div class="table-wrap">
+                                        <div class="main-table table">
+<div class="display-table">
+    <div class="tr thead">
+        <div class="td device-name">Device Name</div>
+        <div class="td device-sku">Device Type</div>
+        <div class="td device-type">Installed date</div>
+        <div class="td device-desc">Installed Product ID</div>
+        <div class="td device-ip">IP Address</div>
+        <div class="td device-track-id">Track ID</div>
+        <div class="td device-edit">Details</div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">TEMP2</div>
+            <div class="td device-sku">Temperature Sensors</div>
+            <div class="td device-type">04/02/2021</div>
+            <div class="td device-desc"><p>BR1234</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">HUMD4</div>
+            <div class="td device-sku">Humidity Sensors</div>
+            <div class="td device-type">16/03/2021</div>
+            <div class="td device-desc"><p>WH8465</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">GAS9</div>
+            <div class="td device-sku">Gas Sensors</div>
+            <div class="td device-type">31/01/2021</div>
+            <div class="td device-desc"><p>SB1452</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">PRSS5</div>
+            <div class="td device-sku">Pressure Sensors</div>
+            <div class="td device-type">30/01/2021</div>
+            <div class="td device-desc"><p>WH8465</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">TEMP4</div>
+            <div class="td device-sku">Temperature Sensors</div>
+            <div class="td device-type">18/02/2021</div>
+            <div class="td device-desc"><p>BR1234</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">OPT4</div>
+            <div class="td device-sku">Optical Sensors</div>
+            <div class="td device-type">17/03/2021</div>
+            <div class="td device-desc"><p>SB1452</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="pane-2" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-2">
+
+                                <div  class="table-scroll">
+                                    <div class="table-wrap">
+                                        <div class="main-table table">
+<div class="display-table">
+    <div class="tr thead">
+        <div class="td device-name">Device Name</div>
+        <div class="td device-sku">Device Type</div>
+        <div class="td device-type">Installed date</div>
+        <div class="td device-desc">Installed Product ID</div>
+        <div class="td device-ip">IP Address</div>
+        <div class="td device-track-id">Track ID</div>
+        <div class="td device-edit">Details</div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">TEMP2</div>
+            <div class="td device-sku">Temperature Sensors</div>
+            <div class="td device-type">04/02/2021</div>
+            <div class="td device-desc"><p>BR1234</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">HUMD4</div>
+            <div class="td device-sku">Humidity Sensors</div>
+            <div class="td device-type">16/03/2021</div>
+            <div class="td device-desc"><p>WH8465</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">GAS9</div>
+            <div class="td device-sku">Gas Sensors</div>
+            <div class="td device-type">31/01/2021</div>
+            <div class="td device-desc"><p>SB1452</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">PRSS5</div>
+            <div class="td device-sku">Pressure Sensors</div>
+            <div class="td device-type">30/01/2021</div>
+            <div class="td device-desc"><p>WH8465</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">TEMP4</div>
+            <div class="td device-sku">Temperature Sensors</div>
+            <div class="td device-type">18/02/2021</div>
+            <div class="td device-desc"><p>BR1234</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iot-sensor-data">
+    <div class="display-table">
+        <div class="tr tbody">
+            <div class="td device-name">OPT4</div>
+            <div class="td device-sku">Optical Sensors</div>
+            <div class="td device-type">17/03/2021</div>
+            <div class="td device-desc"><p>SB1452</p></div>
+            <div class="td device-ip"></div>
+            <div class="td device-track-id"></div>
+            <div class="td device-edit"><a href="update-product-status.html"><img src="common/images/edit-button.png" alt=""></a><a href="#" data-toggle="table-colapse" class="toggle-icon bg-down-arrow"></a></div>
+       </div>
+   </div>
+    <div class="toggle-item-row table-data-collapsed">
+        <div class="toggle-item-col bg-red">
+            <img src="common/images/thermometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">20.40</span>
+                <span class="item-name">Temperature</span>
+            </div>
+        </div>
+        <div class="toggle-item-col bg-sky-blue">   
+             <img src="common/images/humidity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">22.50</span>
+                <span class="item-name">Humidity</span>
+            </div></div>
+       <div class="toggle-item-col bg-light-blue">
+            <img src="common/images/barometer1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">996.00</span>
+                <span class="item-name">Barometer</span>
+            </div>
+       </div>
+        <div class="toggle-item-col bg-light-green">
+           <img src="common/images/luminosity1.svg" alt="">
+            <div class="toggle-item-content">
+                <span class="item-val">106.00</span>
+                <span class="item-name">Luminosity</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>                                
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-management-section3">
+                        <div class="dataTables_info justify-content-start">Showing <span>1-6</span> from <span>50</span> data
+                        </div>
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="product-management.html" tabindex="-1"></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="product-management-2.html">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="product-management-3.html">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="product-management.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="copyright">
+                    <p>Copyright 2020-2021 <a href="#">Organic Ledger</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="common/js/3.2.1.min.js"></script>
+<script type="text/javascript" src="common/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+<script type="text/javascript" src="common/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Organic Ledger</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="common/css/style.css" />
+		<link rel="stylesheet" href="common/css/responsive.css" />
+	</head>
+	<body>
+		<div class="dashboard-section " id="body-row">
+			<div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+				<div class="side-header">
+					<ul class="list-group">
+						<li class="list-group-item d-flex align-items-center menu-collapsed">
+							<a href="index.html">
+								<img src="common/images/logo.png" alt="" class="menu-title" width="250">
+								<img src="common/images/website-small-logo.png" alt="" class="main-small-logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+            <div class="side-body">
+					<ul class="list-group">
+						<a href="register-product.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon01.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Register the Product</span>
+							</div>
+						</a>
+						<a href="update-product-status.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon02.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Update Status</span>
+							</div>
+						</a>
+	                    <a href="notification.html" class="list-group-item list-group-item-action flex-column align-items-start">
+	                        <div class="d-flex w-100 justify-content-start align-items-center ">
+	                            <span><img src="common/images/icon03.png" width="26" height="26" alt=""></span>
+	                            <span class="menu-title">Notification</span>
+	                        </div>
+	                    </a>
+
+
+						<a href="product-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon04.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Products Management</span>
+							</div>
+						</a>
+						<a href="iot-sensors-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon05.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">IoT Sensors Management</span>
+							</div>
+						</a>
+						<a href="orders-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon06.svg" width="26" height="26" width="26" height="26" alt=""></span>
+								<span class="menu-title">Orders Management</span>
+							</div>
+						</a>
+						<a href="blockchain-ledger-explorer.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon07.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Blockchain Ledger Explorer</span>
+							</div>
+						</a>
+						<a href="tracking-journey.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon08.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Tracking Journey</span>
+							</div>
+						</a>
+					</ul>
+            </div>
+				<div class="side-footer">
+					<ul class="list-group">
+						<a href="index.html"  class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/logout.svg" alt=""></span>
+								<span class="menu-title">Logout</span>
+							</div>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="main main-expanded">
+				<nav class="">
+					<a href="#" class="sidebar-toggle" data-toggle="sidebar-colapse">
+						<img src="common/images/menu.png" width="22" height="22" alt="">
+					</a>
+					<span class="main-heading">My Profile</span>
+					<div class="user-profile">
+						<a href="profile.html"><img src="common/images/user-icon.png" alt=""></a>
+						<a href="profile.html"><span class="user-name">Claude McKenna</span></a>
+					</div>
+				</nav>
+				<main class="content">
+					<div class="login-section p-4">
+					<form action="register-product.html" method="post" name="login">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="fullname">Full Name</label>
+									<input type="text" name="fullname"  class="form-control" id="fullname"  placeholder="Enter Here" required>
+								</div>
+								<div class="form-group">
+									<label for="orgname">Organisation Name</label>
+									<input type="text" name="orgname"  class="form-control" id="orgname"  placeholder="Enter Here" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="myprofile_img_section text-center ">
+									<figure>
+										<img src="common/images/user-profile.png" alt="user-profile" width="175" height="175" class=" text-center d-inline">
+									</figure>
+									<div class="file-upload">
+										<input type="file">
+										<img src="common/images/edit-icon.svg" alt="edit" width="23" height="18">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+						<div class="form-group col-md-6">
+							<label for="businessroleSelect">Business Role</label>
+							<select class="form-control" id="businessroleSelect">
+								<option>-- Select Role --</option>
+								<option>Farm Producer</option>
+								<option>Transporter</option>
+								<option>Product Producer</option>
+								<option>Product Supplier</option>
+								<option>Wholesaler</option>
+								<option>Product distributer</option>
+								<option>Retailer</option>
+								<option>Consumer</option>
+							</select>
+						</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="email">Email address</label>
+								<input type="email" name="email"  class="form-control" id="email"  placeholder="Enter Here" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="phone">Phone Number</label>
+								<input type="number" name="phone"  class="form-control" id="phone"  placeholder="Enter Here" required>
+							</div>
+						</div>
+						
+						<div class="col-md-12 p-0">
+							<button type="submit" class=" btn btn-block custom-btn mt-4">Update Profile</button>
+						</div>
+						
+						
+						</form>
+						
+						
+					</div>
+					
+				</main>
+				<footer class="footer">
+					<div class="copyright"><p>Copyright 2020-2021 <a href="#">Organic Ledger</a></p></div>
+				</footer>
+				
+			</div>
+		</div>
+
+		
+
+			
+		<script type="text/javascript" src="common/js/3.2.1.min.js"></script>
+		<script type="text/javascript" src="common/bootstrap/js/bootstrap.bundle.min.js">
+		</script>
+		<script type="text/javascript" src="common/js/custom.js"></script>
+		</body>
+	</html>

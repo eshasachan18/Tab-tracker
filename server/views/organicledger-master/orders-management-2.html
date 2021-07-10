@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>orders management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="common/css/style.css" />
+    <link rel="stylesheet" href="common/css/responsive.css" />
+</head>
+
+<body>
+    <div class="dashboard-section " id="body-row">
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <div class="side-header">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex align-items-center menu-collapsed">
+                        <a href="index.html">
+                            <img src="common/images/logo.png" alt="" class="menu-title" width="250">
+                            <img src="common/images/website-small-logo.png" alt="" class="main-small-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-body">
+                    <ul class="list-group">
+                        <a href="register-product.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon01.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Register the Product</span>
+                            </div>
+                        </a>
+                        <a href="update-product-status.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon02.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Update Status</span>
+                            </div>
+                        </a>
+                        <a href="notification.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center ">
+                                <span><img src="common/images/icon03.png" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Notification</span>
+                            </div>
+                        </a>
+
+
+                        <a href="product-management.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon04.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Products Management</span>
+                            </div>
+                        </a>
+                        <a href="iot-sensors-management.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon05.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">IoT Sensors Management</span>
+                            </div>
+                        </a>
+                        <a href="orders-management.html" class="list-group-item list-group-item-action flex-column align-items-start current-page-active">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon06.svg" width="26" height="26" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Orders Management</span>
+                            </div>
+                        </a>
+                        <a href="blockchain-ledger-explorer.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon07.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Blockchain Ledger Explorer</span>
+                            </div>
+                        </a>
+                        <a href="tracking-journey.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span><img src="common/images/icon08.svg" width="26" height="26" alt=""></span>
+                                <span class="menu-title">Tracking Journey</span>
+                            </div>
+                        </a>
+                    </ul>
+            </div>
+            <div class="side-footer">
+                <ul class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span><img src="common/images/logout.svg" alt=""></span>
+                            <span class="menu-title">Logout</span>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="main main-expanded">
+            <nav class="">
+                <a href="#" class="sidebar-toggle" data-toggle="sidebar-colapse">
+                    <img src="common/images/menu.png" width="22" height="22" alt="">
+                </a>
+                <span class="main-heading">Orders Management</span>
+                <div class="user-profile">
+                        <a href="profile.html"><img src="common/images/user-icon.png" alt=""></a>
+                        <a href="profile.html"><span class="user-name">Claude McKenna</span></a>
+                    </div>
+            </nav>
+            <main class="content">
+                <div class="login-section product-management order-management">
+                    <div class="product-management-section1">
+                        <span class="main-heading">All Orders</span>
+                        <a href="iot-form.html" class="ml-auto product-btn">+ Add Order</a>
+                    </div>
+                    <div class="product-management-section2">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col-8">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a id="tab-1" href="#pane-1" class="nav-link active" data-toggle="tab" role="tab">New Orders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="tab-2" href="#pane-2" class="nav-link" data-toggle="tab" role="tab">Completed Orders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="tab-3" href="#pane-3" class="nav-link" data-toggle="tab" role="tab">Orders in queue</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="tab-4" href="#pane-4" class="nav-link" data-toggle="tab" role="tab">Orders in work</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4 justify-content-end">
+                                <div class="search-display">
+                                    <div class="dataTables_filter">
+                                        <input type="search" class="form-control" placeholder="">
+                                        <input type="submit" value="" class="search-btn">
+                                    </div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item list-view">
+                                            <a id="view-1" href="orders-management.html" class="nav-link">
+                                            </a>
+                                        </li>
+                                        <li class="nav-item grid-view">
+                                            <a id="view-2" href="orders-management-2.html" class="nav-link active"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content grid-view-content" role="tablist">
+                            <div class="tab-content" role="tablist">
+                                <div id="pane-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-1">
+                                    <div class="order-detail-row">
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR2145</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   <!-- <p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name : <span>SOYBEAN </span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">SB1452</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> BROWN RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">BR1234</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR5864</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHEAT</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WH8465</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="pane-2" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-2">
+                                    <div class="order-detail-row">
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR2145</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   <!-- <p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name : <span>SOYBEAN </span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">SB1452</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> BROWN RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">BR1234</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR5864</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHEAT</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WH8465</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="pane-3" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-3">
+                                    <div class="order-detail-row">
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR2145</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   <!-- <p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name : <span>SOYBEAN </span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">SB1452</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> BROWN RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">BR1234</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR5864</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHEAT</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WH8465</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="pane-4" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-4">
+                                    <div class="order-detail-row">
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR2145</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   <!-- <p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name : <span>SOYBEAN </span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">SB1452</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> BROWN RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">BR1234</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHITE RICE</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WR5864</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-detail-content">
+                                            <div class="order-detail-head">
+                                                <div class="p-name"><strong>Product Name :<span> WHEAT</span></strong></div>
+                                                <div class="cost"><strong>Total Cost : <span> $5000</span></strong></div>
+                                            </div>
+                                            <div class="order-detail-body">
+                                                <div class="left-part">
+                                                    <div class="left-part-row">
+                                                        <div class="left-part-col">
+                                                            <div class="label">
+                                                                <strong>Track ID :</strong><span> <a href="#">WH8465</a></span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Due Date :</strong><span> 01 April 2021</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>Weight :</strong><span> 1000 KG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="left-part-col">
+                                                            <span class="heading">Transport Information</span>
+                                                            <div class="label">
+                                                                <strong>By Manufacturer :</strong><span> 5000</span>
+                                                            </div>
+                                                            <div class="label">
+                                                                <strong>By Supplier :</strong><span>15000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<p>I will think about it and get back to you ASAP</p>-->
+                                                    <div class="label">
+                                                        <strong>By Manufacturer :</strong><span> 5000</span>
+                                                    </div>
+                                                    <div class="label">
+                                                        <strong>By Supplier :</strong><span> 15000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-part">
+                                                    <div class="status-box">
+                                                        <div class="label">
+                                                            <strong>Status :</strong>
+                                                            <span class="active"> 40%</span>
+                                                        </div>
+                                                        <p>Order has not been .....</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a href="blockchain-ledger-explorer.html" class="order-button detail-btn">Details</a>
+                                                        <a href="update-product-status.html" class="order-button edit-btn"><img src="common/images/edit-icon-2.png" alt=""><span>Edit</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="copyright">
+                    <p>Copyright 2020-2021 <a href="#">Organic Ledger</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="common/js/3.2.1.min.js"></script>
+<script type="text/javascript" src="common/bootstrap/js/bootstrap.bundle.min.js">
+</script>
+<script type="text/javascript" src="common/js/custom.js"></script>
+</body>
+
+</html>

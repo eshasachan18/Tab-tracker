@@ -1,0 +1,117 @@
+@media screen and (max-width: 1440px) {
+	h1{ font-size: 50px; line-height: 60px; }
+	h2{ font-size: 40px; line-height: 50px }
+.login-section .site-logo{ padding: 25px 0 60px 25px; }
+.login-section .welcome-img{ padding-bottom: 33px; height: 350px; }
+.login-section .welcome-section{padding: 0 50px 75px 50px;}
+.login-section .welcome-section p{ font-size: 18px; }
+.login-section .right-col{ padding: 145px 60px 20px 90px; }
+.login-section .right-col h2{ padding-bottom: 40px; }
+.recent-blocks-body .recent-blocks-col {
+    width: 25%;
+    font-size: 11px;
+}
+.dashboard-section .order-management .dataTables_filter{
+	width: 200px;
+	padding-right: 10px;
+}
+.bank-section{ height: 100%;}
+ .bank-section  h2{ font-size: 25px;  line-height:70px;}
+ .bank-login-section .right-col{ padding: 0px; margin:0px;}
+ .bank-section .custom-btn{ margin: 25px 0; }
+
+
+.button-section .btn{ font-size: 12px; font-weight: 500; min-height: 62px;  } 
+.product-box-desc .product-box-detail .label{ font-size: 14px; }
+.product-box-desc .product-box-detail p span{ font-size: 11px; }
+
+.slider-section { margin: 0 auto; max-width: 600px; }
+.rewards-section { padding: 0; }
+.rewards-section .box-3 img, .rewards-section .box-5 img{ width: 160px; }
+
+.rewards-section .box-1 span{ margin-bottom: 20px;}
+.rewards-section .box-1 { width: 48%;}
+.rewards-section .box-2 {width: 23%}
+.rewards-section .box-3 {width: 23%}
+.rewards-section .box-4 {width: 23%}
+.rewards-section .box-5 {width: 23%}
+.rewards-section .box-6 { width: 48%; }
+.reward-box { margin: 1% 1%; }
+
+.bg_img_2 .product-detail-header{ padding-top: 15px; padding-bottom: 15px; }
+
+#progressbar li:after { left: -44%;}
+.bg_img_2 .product-box-info { padding: 10px 16px;}
+.bg_img_2 .product-box-desc .product-box-detail{ padding: 15px 16px; }
+.bg_img_2 .product-detail-header span{ padding: 0px; }
+#progressbar li { /*font-size: 9px;*/ }
+.bg_img_2 .product-box-desc .product-box-detail p span { font-size:10px; }
+.bg_img_2 .product-detail-header .heading{ font-size:17px; }
+.bg_img_2 .product-box-desc .product-box-detail .label { font-size:13px; }
+.dashboard-section.tracking_2 .main .content{
+	min-height: 750px;
+	}
+.bg_img_2 .footer_bg { padding-top: 163px; }
+
+
+.iot-management .device-ip {
+    width: 110px;
+}
+}
+@media screen and (max-width: 1024px) {
+.bg_img_2  .search_product .custom-btn{right: 143px;}
+
+.bg_img_2  .product-box-desc .col-4 { padding-left: 0px; }
+.tracking_2 #sidebar-container .list-group a{}
+.tracking_2 .side-body .menu-title, .tracking_2 .side-footer .menu-title{ font-size: 14px; }
+.dashboard-section.tracking_2 .sidebar-collapsed {width: 7%;}
+.dashboard-section.tracking_2 .main.main-collapsed{width: 93%;}
+}
+
+@media screen and (max-width: 767px) {
+ .dashboard-section.tracking_2 span.main-heading { font-size:16px; line-height: 20px; }
+.bg_img_2  .search_product .custom-btn { position: initial; margin-top: 20px; font-size: 15px; width: 150px; }
+
+.product-box-area { margin-right: 0px;}
+.dashboard-section.tracking_2 .main.main-expanded {
+    float: right;
+    width: 100%;
+}
+.dashboard-section.tracking_2 .main.main-expanded nav{ position: initial; }
+.dashboard-section.tracking_2  #sidebar-container.sidebar-collapsed{ display: block!important; }
+.dashboard-section.tracking_2 .sidebar-collapsed {width: 10%;}
+.dashboard-section.tracking_2 .main.main-collapsed{width: 90%;}
+
+}
+
+@media screen and (max-width: 576px) {
+.dashboard-section.tracking_2  .button-section { flex-wrap: wrap; }
+.dashboard-section.tracking_2  .button-section a{ width: 50%; margin-bottom: 20px; }
+.dashboard-section.tracking_2 .side-body ul a {
+    margin-bottom: 10px;
+}
+.dashboard-section.tracking_2 #sidebar-container .list-group a{ height: 30px }
+.dashboard-section.tracking_2 .list-group-item.current-page-active{ padding-bottom: 35px }
+}
+@media screen and (max-width: 425px) {
+.dashboard-section.tracking_2 .sidebar-collapsed, .dashboard-section.tracking_2  .sidebar-collapsed .side-footer {width: 15%;}
+.dashboard-section.tracking_2 .main.main-collapsed{width: 85%;}
+.dashboard-section.tracking_2 span.main-heading{ font-size: 14px; }
+.dashboard-section.tracking_2 .user-profile .user-name{ font-size: 12px; }
+}
+
+@media screen and (max-width: 320px) {
+.dashboard-section.tracking_2 .sidebar-collapsed,.dashboard-section.tracking_2  .sidebar-collapsed .side-footer {width: 20%;}
+.dashboard-section.tracking_2 .main.main-collapsed{width: 80%;}
+}
+
+@media screen and (min-width: 1919px) {
+
+.dashboard-section .main .content{
+	min-height: 780px;
+	}
+.dashboard-section.tracking_2 .main .content{
+	min-height: 820px;
+	}
+
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>see as consumer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="common/css/style.css" />
+		<link rel="stylesheet" href="common/css/responsive.css" />
+	</head>
+	<body>
+		<div class="dashboard-section tracking_2" id="body-row">
+			<div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+				<div class="side-header">
+					<ul class="list-group">
+						<li class="list-group-item d-flex align-items-center menu-collapsed">
+							<a href="index.html">
+								<img src="common/images/logo.png" alt="" class="menu-title" width="250">
+								<img src="common/images/website-small-logo.png" alt="" class="main-small-logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="side-body">
+					<ul class="list-group">
+						<a href="register-product.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon01.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Register the Product</span>
+							</div>
+						</a>
+						<a href="update-product-status.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon02.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Update Status</span>
+							</div>
+						</a>
+	                    <a href="notification.html" class="list-group-item list-group-item-action flex-column align-items-start">
+	                        <div class="d-flex w-100 justify-content-start align-items-center ">
+	                            <span><img src="common/images/icon03.png" width="26" height="26" alt=""></span>
+	                            <span class="menu-title">Notification</span>
+	                        </div>
+	                    </a>
+
+
+						<a href="product-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon04.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Products Management</span>
+							</div>
+						</a>
+						<a href="iot-sensors-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon05.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">IoT Sensors Management</span>
+							</div>
+						</a>
+						<a href="orders-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon06.svg" width="26" height="26" width="26" height="26" alt=""></span>
+								<span class="menu-title">Orders Management</span>
+							</div>
+						</a>
+						<a href="blockchain-ledger-explorer.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon07.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Blockchain Ledger Explorer</span>
+							</div>
+						</a>
+						<a href="tracking-journey.html" class="list-group-item list-group-item-action flex-column align-items-start current-page-active">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon08.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Tracking Journey</span>
+							</div>
+						</a>
+					</ul>
+				</div>
+				<div class="side-footer">
+					<ul class="list-group">
+						<a href="index.html"  class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/logout.svg" alt=""></span>
+								<span class="menu-title">Logout</span>
+							</div>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="main main-expanded">
+				<nav class="">
+					<a href="#" class="sidebar-toggle" data-toggle="sidebar-colapse">
+						<img src="common/images/menu.png" width="22" height="22" alt="">
+					</a>
+					<span class="main-heading">Tracking Journey</span>
+					<div class="user-profile">
+						<a href="profile.html"><img src="common/images/user-icon.png" alt=""></a>
+						<a href="profile.html"><span class="user-name">Claude McKenna</span></a>
+					</div>
+				</nav>
+				<div class="bg-image bg_img_2">
+				<main class="content consumer-page">
+					<div class="login-section search_product">
+						
+						<form action="" method="post">
+							<div class="row spacing">
+								<div class="col-12">
+									<div class="form-group">
+										<label for="p_id">Unique Product ID</label>
+										<div class="row justify-content-center no-gutters">
+											<div class="col-md-10 mb-3 mb-md-0">
+												<input type="text" name="p_id" class="form-control" id="p_id" placeholder="Enter Your ID" required="">
+											</div>
+											<div class="col-md-2">
+												<button type="submit" class=" btn btn-block custom-btn m-0">Search</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						
+					</div>
+					<div class="product-detail">
+
+						<div class="product-box-section">
+							<div class="row no-gutters">
+								<div class="col-lg-4 mb-4 mb-lg-0">	
+								   <div class="product-box-area">	
+							            <div class="product-detail-header">
+											<span class="heading d-flex ">
+												<span class="product-label col-5">Product Name </span>
+												<span class="col-1">:</span>
+												<span class="product-title col-6">BROWN RICE</span>
+											</span>
+										</div>	
+										<div class="product-box-info">
+										
+											<div class="d-flex ">
+				                                  <span class="label col-6">Item</span>
+				                                  <span class="item-name col-6">:      BR1234</span>
+	                                        </div>
+											<div class="d-flex">
+				                                  <span class="label col-6">Reference</span>
+				                                  <span class="item-name col-6">:      #2515</span>
+	                                        </div>
+											<div class="d-flex">
+				                                  <span class="label col-6">Quality Rejection</span>
+				                                  <span class="item-name col-6">:      No</span>
+	                                        </div>
+											<div class="d-flex">
+				                                  <span class="label col-6">Rejection Reason</span>
+				                                  <span class="item-name col-6">:      None</span>
+	                                        </div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8 ">
+									<div class="product-box-desc">
+										<div class="d-flex flex-wrap">
+											<div class="col-sm-6 col-md-4 padding_bottom_30">
+												<div class="product-box-detail">
+												<span class="label">Pickup date & time</span>
+												 <p class="date-time">
+												 	<span class="date">06/04/2021</span>
+                                                    <span class="time"> 10:30 AM</span>
+												 </p>
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-4 padding_bottom_30">
+												<div class="product-box-detail">
+												<span class="label">Farm to distributor</span>
+												 <p class="date-time">
+												 	<span class="date">Temp. / Humidity</span>
+                                                    <span class="time"> In Transport : 55 0F / 54.00 %</span>
+												 </p>
+												</div>
+											</div>	
+											<div class="col-sm-6 col-md-4 padding_bottom_30">
+												<div class="product-box-detail">
+												<span class="label">Arrived</span>
+												 <p class="date-time">
+												 	<span class="date">06/04/2021</span>
+                                                    <span class="time"> 10:30 AM</span>
+												 </p>
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-4 padding_bottom_30">
+												<div class="product-box-detail">
+												<span class="label">Departed</span>
+                                                  <p class="date-time">
+												 	<span class="date">Temp. / Humidity</span>
+                                                    <span class="time"> In Transport : 55 0F / 54.00 %</span>
+												 </p>
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-4 padding_bottom_30">
+												<div class="product-box-detail">
+												<span class="label">Distributor to restaurant</span>
+												 <p class="date-time">
+												 	<span class="date">06/04/2021</span>
+                                                    <span class="time"> 10:30 AM</span>
+												 </p>
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-4 padding_bottom_30">
+												<div class="product-box-detail">
+												<span class="label">Receiving Location</span>
+                                                  <p class="date-time">
+												 	<span class="date">Temp. / Humidity</span>
+                                                    <span class="time"> In Transport : 55 0F / 54.00 %</span>
+												 </p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="product-box-desc">
+										<div class="d-flex flex-wrap">
+											
+
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="step-section">
+							<ul id="progressbar">
+								<li  class="active">Farm Producer</li>
+								<li  class="active">Product Producer</li>
+								<li  class="active current">Wholesaler</li>
+								<li>Distributor</li>
+								<li>Retailer</li>
+							</ul>
+						</div>
+						<div class="button-section">
+							<a href="check-organic-certification.html" class="btn">Check Organic Certification</a>
+						    <a href="environment-soil-info.html" class="btn">Environment <br>& Soil Info</a>
+							<a href="temperature-humidity.html" class="btn">Temperature<br> & Humidity Log</a>
+							<a href="taste-profile.html" class="btn">Taste Profile</a>
+							<a href="bank-login.html" class="btn last-item d-flex align-items-center justify-content-center">
+								<img src="common/images/home-icon-2.png" height="22" class="mr-2"><span>Your Orle Bank</span>
+							</a>
+						</div>
+						
+					</div>
+					
+				</main>
+				<div class="footer_bg">
+						<footer class="footer">
+							<div class="copyright"><p>Copyright 2020-2021 <a href="#">Organic Ledger</a></p></div>
+						</footer>
+			   </div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="common/js/3.2.1.min.js"></script>
+		<script type="text/javascript" src="common/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="common/js/custom.js"></script>
+	</body>
+</html>

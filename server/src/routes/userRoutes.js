@@ -9,6 +9,10 @@ router.post('/login',authController.login);
 router.get('/signup',(req, res)=>{
   res.render('register');
 })
+router.get('/login',(req, res)=>{
+  res.render('index');
+})
+
 
 router.post('/register',(req,res)=>{ 
     res.send({

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>update product status</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="common/css/style.css" />
+		<link rel="stylesheet" href="common/css/responsive.css" />
+	</head>
+	<body>
+		<div class="dashboard-section " id="body-row">
+			<div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+				<div class="side-header">
+					<ul class="list-group">
+						<li class="list-group-item d-flex align-items-center menu-collapsed">
+							<a href="index.html">
+								<img src="common/images/logo.png" alt="" class="menu-title" width="250">
+								<img src="common/images/website-small-logo.png" alt="" class="main-small-logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+            <div class="side-body">
+					<ul class="list-group">
+						<a href="register-product.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon01.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Register the Product</span>
+							</div>
+						</a>
+						<a href="update-product-status.html" class="list-group-item list-group-item-action flex-column align-items-start current-page-active">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon02.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Update Status</span>
+							</div>
+						</a>
+	                    <a href="notification.html" class="list-group-item list-group-item-action flex-column align-items-start">
+	                        <div class="d-flex w-100 justify-content-start align-items-center ">
+	                            <span><img src="common/images/icon03.png" width="26" height="26" alt=""></span>
+	                            <span class="menu-title">Notification</span>
+	                        </div>
+	                    </a>
+
+
+						<a href="product-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon04.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Products Management</span>
+							</div>
+						</a>
+						<a href="iot-sensors-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon05.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">IoT Sensors Management</span>
+							</div>
+						</a>
+						<a href="orders-management.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon06.svg" width="26" height="26" width="26" height="26" alt=""></span>
+								<span class="menu-title">Orders Management</span>
+							</div>
+						</a>
+						<a href="blockchain-ledger-explorer.html" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon07.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Blockchain Ledger Explorer</span>
+							</div>
+						</a>
+						<a href="tracking-journey.html" class="list-group-item list-group-item-action flex-column align-items-start ">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/icon08.svg" width="26" height="26" alt=""></span>
+								<span class="menu-title">Tracking Journey</span>
+							</div>
+						</a>
+					</ul>
+            </div>
+				<div class="side-footer">
+					<ul class="list-group">
+						<a href="index.html"  class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span><img src="common/images/logout.svg" alt=""></span>
+								<span class="menu-title">Logout</span>
+							</div>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="main main-expanded">
+				<nav class="">
+					<a href="#" class="sidebar-toggle" data-toggle="sidebar-colapse">
+						<img src="common/images/menu.png" width="22" height="22" alt="">
+					</a>
+					<span class="main-heading">Update Status</span>
+					<div class="user-profile">
+						<a href="profile.html"><img src="common/images/user-icon.png" alt=""></a>
+						<a href="profile.html"><span class="user-name">Claude McKenna</span></a>
+					</div>
+				</nav>
+				<main class="content">
+					<div class="login-section update_product_status">
+						
+						<form action="register-product-detail.html" method="post" name="register_product">
+							<div class="row">
+								<div class="col-6 left-area ">
+									<div class="form-group">
+										<label for="p_id">Unique Product ID</label>
+										<input type="text" name="p_id"  class="form-control" id="p_id"  placeholder="Enter Your ID" value="BR1234" required>
+									</div>
+									<div class="form-group">
+										<label for="p_name">Product Name</label>
+										<input type="text" name="p_name" id="p_name"
+										class="form-control" value="BROWN RICE"  placeholder="Enter Here" required>
+									</div>
+									<div class="form-group">
+										<label for="p_lat">Latitude</label>
+										<input type="text" name="p_lat" id="p_lat"
+										class="form-control" value="20.5937° N"  placeholder="Enter in degrees" required>
+									</div>
+									<div class="form-group">
+										<label for="p_log">Longitude</label>
+										<input type="text" name="p_log" id="p_log"
+										class="form-control" value="78.9629° E"  placeholder="Enter in degrees" required>
+									</div>
+									<div class="form-group">
+										<label for="p_log">Location</label>
+										<input type="text" name="location" id="p_log"
+										class="form-control" value="Lucknow, UP India"  placeholder="Enter Here" required>
+									</div>
+
+									
+									<div class="form-group">
+										<label for="p_desc">Description</label>
+										<textarea rows="3" cols="30" name="p_desc" id="p_desc"
+										class="form-control"  placeholder="Text Here" required>The product has been checked and packed</textarea>
+									</div>
+									<div class="col-md-12 p-0">
+										<button type="submit" class=" btn btn-block custom-btn m-0">Update</button>
+									</div>
+								</div>
+								<div class="col-6 right-area">
+									<div class="row mb-4 mt-4 ">
+										<div class="col-6">
+											<img id="replace_img_1" src="common/images/upload-img-2.png" alt="" width="205" height="136">
+											<span id="upload-1">123.jpg</span>
+										</div>
+										<div class="col-6 mt-4">
+											<span>Upload Media</span>
+											<div class="button-wrapper mt-3">
+												<span class="label">
+													<img src="common/images/upload-icon.png" alt="">
+													<span>Choose a File</span>
+												</span>
+												
+												<input type="file" name="upload" id="upload-media" class="upload-box" placeholder="Choose a File">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6">
+											<img id="replace_img_2" src="common/images/upload-img-1.png" alt="" width="205" height="136">
+											<span id="upload-2">xyz.docx</span>
+										</div>
+										<div class="col-6 mt-4">
+											<span>Upload IOT Data</span>
+											<div class="button-wrapper mt-3">
+												<span class="label">
+													<img src="common/images/upload-icon.png" alt=""><span>Choose a File</span>
+												</span>
+												
+												<input type="file" name="upload" id="upload-iot" class="upload-box" placeholder="Choose a File">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						
+					</div>
+				</main>
+				<footer class="footer">
+					<div class="copyright"><p>Copyright 2020-2021 <a href="#">Organic Ledger</a></p></div>
+				</footer>
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="common/js/3.2.1.min.js"></script>
+		<script type="text/javascript" src="common/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="common/js/custom.js"></script>
+	</body>
+</html>
