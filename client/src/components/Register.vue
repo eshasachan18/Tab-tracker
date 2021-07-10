@@ -3,6 +3,12 @@
    <h1>Register</h1>
    <input
      type="text"
+     name="name"
+     v-model="name"
+     placeholder="name" />
+     <br>
+   <input
+     type="text"
      name="email"
      v-model="email"
      placeholder="email" />
@@ -12,6 +18,12 @@
      name="password"
      v-model="password"
      placeholder="password" />
+     <br>
+    <input
+     type="password"
+     name="passwordConfirm"
+     v-model="passwordConfirm"
+     placeholder="passwordConfirm" />
      <br>
      <button @click="register">Register</button>
   </div>
@@ -23,8 +35,11 @@ export default {
   name: 'Register',
   data () {
     return {
-      email: 'abc',
-      password: '123'
+      name: '',
+      email: '',
+      password: '',
+      passwordConfirm: '',
+      error: null
 
     }
   },
@@ -32,8 +47,10 @@ export default {
     async register () {
       // console.log('register button was clicked', this.email, this.password)
       const response = await AuthenticationService.register({
+        name: this.name,
         email: this.email,
-        password: this.password
+        password: this.password,
+        passwordConfirm: this.passwordConfirm
       })
       console.log(response.data)
     }

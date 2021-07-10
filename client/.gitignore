@@ -15,5 +15,3 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
-client/node_modules/
-server/node_modules/

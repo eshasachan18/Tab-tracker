@@ -4,6 +4,7 @@ const router = express.Router()
 console.log('inside route');
 module.exports = router =>{
 router.post('/signup',authController.signup);
+router.post('/login',authController.login);
 
 router.post('/register',(req,res)=>{ 
     res.send({
